@@ -1,15 +1,12 @@
 <?php
 /**
- * Shows penny arcade rss feed w/ comics inline
+ * Shows cad rss feed w/ comics inline
+ * cad-comic rss feed
  *
  * @author Jack Lindamood
  * @license Apache License, Version 2.0
  */
 header('Content-Type: text/xml');
-$subreddit = $_GET['s'];
-if (!$subreddit) {
-	$subreddit = '';
-}
 
 $url_rss  = 'http://cdn.cad-comic.com/rss.xml';
 $ch = curl_init($url_rss);
